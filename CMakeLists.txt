@@ -1,4 +1,3 @@
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}../)
 cmake_minimum_required(VERSION 4.1)
 project(Algorithm_problem)
 
@@ -8,7 +7,7 @@ include_directories(
         include
         leetcode
 )
-
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 add_executable(
         Algorithm_problem
         main.cpp
