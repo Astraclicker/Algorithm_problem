@@ -16,3 +16,12 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {
     }
 };
+
+//打印链表(debug)
+inline void print_list(const ListNode *head) {
+    auto temp = head;
+    while (temp != nullptr) {
+        cout << temp->val << endl;
+        temp = temp->next;
+    }
+}
